@@ -63,11 +63,11 @@ h3 {
     color: #113946;
 }
 .bookContainer {
-    width: 550px;
+    width: 650px;
     padding: 10px;
     margin-top: 30px;
 }
-p {
+p, footer {
     font-family: "IBM Plex Serif", serif;
     font-style: normal;
     color: #113946;
@@ -78,4 +78,12 @@ p {
 }
 .author {
     margin-bottom: 15px;
+}
+.bookTilesLink {
+    text-decoration-color: #EAD7BB;
+}
+
+footer {
+    background-color: #BCA37F;
+    margin-top: 300px;
 }
