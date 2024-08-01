@@ -29,6 +29,8 @@ h1 {
 .buttonContainer {
     display: flex;
     gap: 10px;
+    border-bottom: 4px solid black;
+    padding: 5px;
 }
 .arrayButtons {
     border-radius: 100px;
@@ -39,4 +41,41 @@ h1 {
     padding: 10px;
     color: #113946;
     background-color: #BCA37F;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.booksArray {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+h3 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #113946;
+}
+.bookContainer {
+    width: 550px;
+    padding: 10px;
+    margin-top: 30px;
+}
+p {
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #113946;
+}
+.readAndRate {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.author {
+    margin-bottom: 15px;
 }
