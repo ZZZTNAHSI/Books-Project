@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #fff2d8;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 25vh;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    margin-bottom: 200px;
+    color: #113946;
+}
+.header {
+    max-width: 400px;
+    border: 4px black solid;
+    padding: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+.arrayButtons {
+    border-radius: 100px;
+    border: none;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 350;
+    font-style: normal;
+    padding: 10px;
+    color: #113946;
+    background-color: #BCA37F;
+}
