@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../add.css">
+</head>
+<body>
+    <nav>
+        <p class="title">
+            The Book Stop
+        </p>
+        <a href="/" class="homeButton">Home</a>
+    </nav>
+    <div class="page">
+
+        <form action="/add" method="post" class="formContainer">
+            <h1>
+                Add a book
+            </h1>
+            <label for="isbn">
+                ISBN:
+            </label>
+            <input type="text" name="isbn" placeholder="Enter your ISBN here" class="text">
+            <label for="authName">
+                Authors name:
+            </label>
+            <input class="text" type="text" name="authName" placeholder="Authors name here">
+            <label for="rating">
+                Rating:
+            </label>
+            <input class="text" type="text" name="rating" placeholder="Enter a number between 1 -100">
+            <label for="date">
+                Date:
+            </label>
+            <input class="text" type="text" name="date" placeholder="Enter a date YEAR-MONTH-DAY">
+            <label for="review">
+                Review:
+            </label>
+            <textarea class="text" name="review" placeholder="Enter review here" ></textarea>
+            <button value="submit" type="submit">Submit</button>  
+        </form>
+    </div>
+    <footer>
+        IKM © 2024
+    </footer>
+</body>
+</html>
