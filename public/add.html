@@ -16,13 +16,37 @@
         </p>
         <a href="/" class="homeButton">Home</a>
     </nav>
-    <div>
-        <div>
+    <div class="page">
+
+        <form action="/add" method="post" class="formContainer">
             <h1>
                 Add a book
             </h1>
-            <!-- How tf do forms work in this bithc-->
-        </div>
+            <label for="isbn">
+                ISBN:
+            </label>
+            <input type="text" name="isbn" placeholder="Enter your ISBN here" class="text">
+            <label for="authName">
+                Authors name:
+            </label>
+            <input class="text" type="text" name="authName" placeholder="Authors name here">
+            <label for="rating">
+                Rating:
+            </label>
+            <input class="text" type="text" name="rating" placeholder="Enter a number between 1 -100">
+            <label for="date">
+                Date:
+            </label>
+            <input class="text" type="text" name="date" placeholder="Enter a date YEAR-MONTH-DAY">
+            <label for="review">
+                Review:
+            </label>
+            <textarea class="text" name="review" placeholder="Enter review here" ></textarea>
+            <button value="submit" type="submit">Submit</button>  
+        </form>
     </div>
+    <footer>
+        IKM © 2024
+    </footer>
 </body>
 </html>

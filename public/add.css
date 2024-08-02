@@ -9,7 +9,6 @@ body {
 nav {
     background-color: #BCA37F;
     display: flex;
-    justify-content: flex-end;
     width: 100%;
     justify-content: space-between;
 }
@@ -22,6 +21,9 @@ p {
 .title {
     font-size: 20px;
     padding: 5px;
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #113946;
 }
 .homeButton {
     text-decoration-color: #EAD7BB;
@@ -30,5 +32,72 @@ p {
     color: #113946;
     font-size: 20px;
     padding: 5px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+}
+.page {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 640;
+    font-style: normal;
+    color: #113946;
+    font-size: 60px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #113946;
+}
+.text {
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #FFF2D8;
+    background-color: #BCA37F;
+    border: none;
+}
+input {
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+}
+textarea {
+    min-height: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #113946;
+    font-size: 25px;
+}
+button {
+    width: 15%;
+    background-color: #BCA37F;
+    min-height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #113946;
+    margin-top: 5px;
+}
+footer {
+    background-color: #BCA37F;
+    margin-top: 300px;
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #113946;
 }
 
