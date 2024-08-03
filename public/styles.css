@@ -55,22 +55,28 @@ img {
     border-radius: 5px;
     margin-right: 20px;
 }
-h3 {
+.buttonOfHell {
     font-family: "IBM Plex Serif", serif;
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
     color: #113946;
+    background-color: #fff2d8;
+    border: none;
 }
 .bookContainer {
     width: 650px;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 p, footer {
     font-family: "IBM Plex Serif", serif;
     font-style: normal;
     color: #113946;
+}
+
+.bodyText {
+    min-height: 200px;
 }
 .readAndRate {
     margin-top: 15px;
@@ -126,7 +132,7 @@ nav {
 .inputInivs {
     display: none;
     visibility: hidden;
-    
+
 }
 
 .delButton {

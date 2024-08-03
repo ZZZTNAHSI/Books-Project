@@ -21,21 +21,26 @@
             <% if (locals.bookPage) { %>
                 <% bookPage.forEach((bookInfo) => { %>
                     <div class="bookContainer">
-                        <img src="https://covers.openlibrary.org/b/isbn/<%= bookInfo.isbn %>-L.jpg">
-                        <a href="/<%= bookInfo.id %>"  class="bookTilesLink">
-                            <h3>
+                        <img src="https://covers.openlibrary.org/b/isbn/<%= bookInfo.isbn %>-M.jpg">
+                        <form action="/<%= bookInfo.id %>" method="get" class="bookTilesLink">
+                            <button class="buttonOfHell" type="submit" value="Submit">
                                 <%= bookInfo.title %>
-                            </h3>
-                        </a>
+                            </button>
+                        </form>
                         <p class="readAndRate">
                             Read: <%= bookInfo.dateread %> Rating: <%= bookInfo.review %>/100
                         </p>
                         <p class="author">
                             Author: <%= bookInfo.author %>
                         </p>
-                        <p>
+                        <p class="bodyText">
                             <%= bookInfo.text %>
                         </p>
+                        <form action="/delete/<%= bookInfo.id%>" method="get">
+                            <button class="delButton" value="Submit" type="submit">Delete</button>
+                        </form>
+                    </div>
+
                 <% }); %>
             <% } %>
         </div>
