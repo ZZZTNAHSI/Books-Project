@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="styles.css">
 <body>
     <h1>
         <div class="header">
@@ -19,12 +19,16 @@
         <div>
             <div>
                 <div class="buttonContainer">
-                    <button class="arrayButtons">
-                        Best
-                    </button>
-                    <button class="arrayButtons">
-                        Recent
-                    </button>
+                    <form action="/best" method="get">
+                        <button type="submit" value="submit" class="arrayButtons">
+                            Best
+                        </button>
+                    </form>
+                    <form action="/recent" method="get">
+                        <button class="arrayButtons" type="submit" value="submit">
+                            Recent
+                        </button>
+                    </form>
                     <form action="/addPage" method="get">
                         <button class="arrayButtons" type="submit" value="submit" >
                             Add
@@ -32,48 +36,7 @@
                     </form>
                 </div>
             </div>
-            <div class="bookContainer">
-                <img src="https://covers.openlibrary.org/b/isbn/9780307275639-L.jpg">
-                <a href="google.com" class="bookTilesLink">
-                    <h3>
-                        Tuesdays with Morrie
-                    </h3>
-                </a>
-                <p class="readAndRate">
-                    Read: 2024-7-28 Rating: 83/100
-                </p>
-                <p class="author">
-                    Author: Mitch Albon
-                </p>
-                <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mi cursus convallis pellentesque, feugiat iaculis ante nostra. Quisque taciti dictum luctus nostra dapibus suscipit tellus? Erat est magnis habitasse nostra amet. Consequat urna pretium at euismod non facilisis hac. Ut natoque fermentum auctor dui phasellus dignissim orci. Himenaeos ultrices malesuada; nibh congue primis sit aliquam. Urna fringilla bibendum donec hendrerit mauris ullamcorper. Sagittis venenatis in lobortis sem aliquam hendrerit lectus. Odio cursus eu nam, neque tincidunt urna.
-
-Vivamus ligula adipiscing purus montes ligula facilisis libero parturient. Molestie vivamus cubilia maximus phasellus ipsum nunc porta. Dictum leo rutrum tristique cubilia nec. Condimentum natoque commodo enim placerat montes ex dapibus. Efficitur nisl penatibus amet, suscipit natoque elit. Vulputate parturient vehicula nibh massa velit donec vel tristique. Nisi inceptos cubilia habitant class mattis. Sodales purus ipsum senectus velit congue nullam elementum natoque aptent. Ac non massa risus; scelerisque facilisi rutrum accumsan maecenas ad.
-
-Commodo diam sodales justo vel mollis nisi adipiscing...
-                </p>
-            </div>
-            <div class="bookContainer">
-                <img src="https://covers.openlibrary.org/b/isbn/9780307275639-L.jpg">
-                <a href="google.com" class="bookTilesLink">
-                    <h3>
-                        Tuesdays with Morrie
-                    </h3>
-                </a>
-                <p class="readAndRate">
-                    Read: 2024-7-28 Rating: 83/100
-                </p>
-                <p class="author">
-                    Author: Mitch Albon
-                </p>
-                <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Mi cursus convallis pellentesque, feugiat iaculis ante nostra. Quisque taciti dictum luctus nostra dapibus suscipit tellus? Erat est magnis habitasse nostra amet. Consequat urna pretium at euismod non facilisis hac. Ut natoque fermentum auctor dui phasellus dignissim orci. Himenaeos ultrices malesuada; nibh congue primis sit aliquam. Urna fringilla bibendum donec hendrerit mauris ullamcorper. Sagittis venenatis in lobortis sem aliquam hendrerit lectus. Odio cursus eu nam, neque tincidunt urna.
-
-Vivamus ligula adipiscing purus montes ligula facilisis libero parturient. Molestie vivamus cubilia maximus phasellus ipsum nunc porta. Dictum leo rutrum tristique cubilia nec. Condimentum natoque commodo enim placerat montes ex dapibus. Efficitur nisl penatibus amet, suscipit natoque elit. Vulputate parturient vehicula nibh massa velit donec vel tristique. Nisi inceptos cubilia habitant class mattis. Sodales purus ipsum senectus velit congue nullam elementum natoque aptent. Ac non massa risus; scelerisque facilisi rutrum accumsan maecenas ad.
-
-Commodo diam sodales justo vel mollis nisi adipiscing...
-                </p>
-            </div>
+            <%- include("partials/bookreview.ejs") %>
         </div>
     </div>
     <footer>
